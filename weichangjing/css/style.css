@@ -76,6 +76,23 @@ h1{
     right:auto;
     margin-left:-13.5px;
     transform: rotateZ(-90deg);
+    color: #ffffff;
+    animation: myfirst 2s infinite;
+}
+@keyframes myfirst
+{
+    0%{
+      bottom: 2%;
+  }
+    50%{
+        bottom: 4%;
+    }
+}
+.swiper-button-prev, .swiper-button-next {
+    width: 17px;
+    height: 34px;
+    background-size: 17px 34px;
+
 }
 .s1,.s2,.s3,.s4,.s5,.s6,.s7{
     height: 100%;
@@ -122,6 +139,21 @@ h1{
     /*border: dashed 2px #00fbc3;*/
     /*box-shadow: 0 0 0 2px,0 0 0 4px #00fbc3;*/
     border-radius: 50%;
+}
+.s1 .header img:nth-of-type(6){
+    position: absolute;
+    width: 87%;
+    top: 20%;
+    left: 4%;
+    animation: dashedni 8s infinite linear;
+}
+@-webkit-keyframes dashedni {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
 }
 .swing{
     transform-origin: center;
@@ -339,12 +371,19 @@ h1{
     left:0%;
     bottom:0;
 }
-
 .s1 .footer p img:nth-of-type(2) {
     width: 120%;
     left: -10%;
     bottom:0;
+    animation: myfirs 3s infinite alternate;
 }
+@keyframes myfirs
+{
+    0%{
+        left: 3%;
+    }
+}
+
 /*s2-s7自定义样式*/
 .headerp{
     color:#09debe;
@@ -376,8 +415,14 @@ h1{
     width: 120%;
     left:-10%;
     bottom:0;
+    animation: myfirs 3s infinite alternate;
 }
-
+@keyframes myfirs
+{
+    0%{
+        left: 3%;
+    }
+}
 /*s2自定义样式*/
 .s2 .main{
     padding:8px;
@@ -1039,3 +1084,115 @@ h1{
         padding-bottom: 20px;
     }
 }
+
+
+
+/*s5自定义样式*/
+
+
+/*s5背景框*/
+.s5 .main p img:nth-of-type(1){
+    position: absolute;
+    width: 35%;
+    height: 27%;
+    top: 20%;
+    left: 10%;
+}
+.s5 .main p img:nth-of-type(2){
+    position: absolute;
+    width: 35%;
+    height: 27%;
+    top: 20%;
+    right: 10%;
+}
+.s5 .main p img:nth-of-type(3){
+    position: absolute;
+    width: 35%;
+    height: 27%;
+    top: 55%;
+    left: 10%;
+}
+.s5 .main p img:nth-of-type(4){
+    position: absolute;
+    width: 35%;
+    height: 27%;
+    top: 55%;
+    right: 10%;
+}
+
+
+/*s5人物图片*/
+.s5 .main .m1 img{
+    position: absolute;
+    width: 35%;
+    top: 20%;
+    left: 10%;
+}
+.s5 .main .m2 img{
+    position: absolute;
+    width: 35%;
+    top: 20%;
+    right: 10%;
+}
+.s5 .main .m3 img{
+    position: absolute;
+    width: 35%;
+    top: 55%;
+    left: 10%;
+}
+.s5 .main .m4 img{
+    position: absolute;
+    width: 35%;
+    top: 55%;
+    right: 10%;
+}
+.s5 .main .m1 h5{
+    position: absolute;
+    color: #ffffff;
+    top: 38%;
+    left: 15%;
+}
+.s5 .main .m2 h5{
+    position: absolute;
+    color: #ffffff;
+    top: 38%;
+    right: 15%;
+}
+.s5 .main .m3 h5{
+    position: absolute;
+    color: #ffffff;
+    top: 73%;
+    left: 15%;
+}
+.s5 .main .m4 h5{
+    position: absolute;
+    color: #ffffff;
+    top: 73%;
+    right: 15%;
+}
+.s5 .main .back{
+    background: url("../img/9.png");
+    width:25%;
+    background-size: 100% 100%;
+}
+.s5 .main .m1 p{
+    position: absolute;
+    top: 42%;
+    left: 15%;
+}
+.s5 .main .m2 p{
+    position: absolute;
+    top: 42%;
+    right: 15%;
+}
+.s5 .main .m3 p{
+    position: absolute;
+    top: 77%;
+    left: 15%;
+}
+.s5 .main .m4 p{
+    position: absolute;
+    top: 77%;
+    right: 15%;
+}
+
