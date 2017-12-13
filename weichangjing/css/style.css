@@ -27,13 +27,42 @@ body {
 
 /*自定义样式*/
 
+/*音乐样式*/
+
+#mp3btn{
+    position: absolute;
+    right:5%;
+    top:4%;
+    z-index:100;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(73, 78, 78, 0.72);
+    border: solid 3px rgba(72, 65, 65, 0.55);
+    text-align: center;
+    line-height: 30px;
+    animation: gogogo 2s infinite linear;
+}
+#mp3btn img{
+    width: 10px;
+}
+
+@-webkit-keyframes gogogo {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
 h1{
     width: 80%;
     height:40px;
     font-size: 30px;
     margin: 0 auto;
     background: url("../img/images/s2_03.png") no-repeat;
-    -moz-background-size:100% 100%;
     background-size:100% 100%;
     color: #09debe;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -60,32 +89,216 @@ h1{
     width: 35px;
     top:128px;
     left: 50px;
+    animation-iteration-count:infinite;
 }
-
 .s1 .header img:nth-of-type(2){
     width: 65px;
     top:85px;
     right: 37px;
+    animation-iteration-count:infinite;
 }
 
 .s1 .header img:nth-of-type(3) {
     width: 55px;
     left: 35px;
     bottom: 185px;
+    animation-iteration-count:infinite;
 }
 
 .s1 .header img:nth-of-type(4) {
     width: 46px;
     right: 44px;
     bottom: 210px;
+    animation-iteration-count:infinite;
 }
 
 .s1 .header img:nth-of-type(5) {
     width: 64%;
     left: 50%;
     margin-left: -32%;
-    top: 30%;
+    top: 27%;
+    animation-iteration-count:infinite;
+    /*padding:20px;*/
+    /*border: dashed 2px #00fbc3;*/
+    /*box-shadow: 0 0 0 2px,0 0 0 4px #00fbc3;*/
+    border-radius: 50%;
 }
+.swing{
+    transform-origin: center;
+}
+/*!*首页虚线部分*!*/
+@media screen and (max-width: 414px) {
+    .dashed{
+        position: absolute;
+        top: 24%;
+        left: 14%;
+
+    }
+    .dashed div:nth-of-type(1){
+        width:300px;
+        height: 300px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        animation: dashedshun 8s infinite linear;
+    }
+    .dashed div:nth-of-type(2){
+        width:350px;
+        height: 350px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -175px;
+        margin-left: -175px;
+        animation: dashedni 8s infinite linear;
+    }
+    .dashed div:nth-of-type(3){
+        width:400px;
+        height: 400px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -200px;
+        animation: dashedshun 8s infinite linear;
+    }
+    .dashed div:nth-of-type(4){
+        width:450px;
+        height: 450px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -225px;
+        margin-left: -225px;
+        animation: dashedni 8s infinite linear;
+    }
+    @-webkit-keyframes dashedshun {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes dashedni {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .dashed{
+        position: absolute;
+        top: 24%;
+        left: 12%;
+
+    }
+    .dashed div:nth-of-type(1){
+        width:280px;
+        height: 280px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        animation: dashedshun 8s infinite linear;
+    }
+    .dashed div:nth-of-type(2){
+        width:320px;
+        height: 320px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -160px;
+        margin-left: -160px;
+        animation: dashedni 8s infinite linear;
+    }
+    .dashed div:nth-of-type(3){
+        width:360px;
+        height: 360px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -180px;
+        margin-left: -180px;
+        animation: dashedshun 8s infinite linear;
+    }
+    .dashed div:nth-of-type(4){
+        width:400px;
+        height: 400px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -200px;
+        animation: dashedni 8s infinite linear;
+    }
+}
+@media screen and (max-width: 320px) {
+    .dashed{
+        position: absolute;
+        top: 24%;
+        left: 15%;
+
+    }
+    .dashed div:nth-of-type(1){
+        width:220px;
+        height: 220px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        animation: dashedshun 8s infinite linear;
+    }
+    .dashed div:nth-of-type(2){
+        width:250px;
+        height: 250px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -125px;
+        margin-left: -125px;
+        animation: dashedni 8s infinite linear;
+    }
+    .dashed div:nth-of-type(3){
+        width:280px;
+        height: 280px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -140px;
+        margin-left: -140px;
+        animation: dashedshun 8s infinite linear;
+    }
+    .dashed div:nth-of-type(4){
+        width:310px;
+        height: 310px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -155px;
+        margin-left: -155px;
+        animation: dashedni 8s infinite linear;
+    }
+}
+
+
 /*首页文字部分*/
 .s1 .main{
     position: absolute;
@@ -104,9 +317,9 @@ h1{
     width: 55%;
     margin: 0 auto;
     background: url("../img/9.png");
-    -moz-background-size:100% 100%;
     background-size:100% 100%;
 }
+
 /*首页footer部分文字*/
 .s1 .footer{
     position: absolute;
@@ -124,14 +337,28 @@ h1{
 .s1 .footer p img:nth-of-type(1){
     width: 120%;
     left:0%;
+    bottom:0;
 }
 
 .s1 .footer p img:nth-of-type(2) {
     width: 120%;
     left: -10%;
+    bottom:0;
+}
+/*s2-s7自定义样式*/
+.headerp{
+    color:#09debe;
+    font-size: 10px;
+}
+.s2 .header,.s3 .header,.s4 .header,.s5 .header,.s6 .header,.s7 .header{
+    padding-top: 30px;
 }
 
-/*s2-s7footer自定义样式*/
+@media screen and (max-width: 320px){
+    .s2 .header,.s3 .header,.s4 .header,.s5 .header,.s6 .header,.s7 .header{
+        padding-top: 20px;
+    }
+}
 .s2 .footer{
     height: 70px;
 }
@@ -152,22 +379,663 @@ h1{
 }
 
 /*s2自定义样式*/
-.s2 .header,.s3 .header,.s4 .header,.s5 .header,.s6 .header,.s7 .header{
-    padding-top: 70px;
-}
 .s2 .main{
+    padding:8px;
     text-align: left;
     width: 80%;
     margin: 0 auto;
-    padding:30px 27px;
-    -moz-opacity:0.3;
-    background: radial-gradient(#00e7f9 -24%, #00e7f9 100%);}
+    margin-top: 10px;
+    padding-bottom: 30px;
+    background: url("../img/12.png") no-repeat;
+    background-size:100% 100%;
+    position: relative;
+}
 
 .s2 .main p{
-    opacity: 1;
-    font-size: 15px;
-    margin: 0 27px;
+    font-size: 10px;
+    margin: 0 20px;
     line-height: 30px;
     color: #00fbc3;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.s2 .main span{
+    position: absolute;
+    width:120px;
+    left: 50%;
+    margin-left: -60px;
+    top: 97%;
+    text-align: center;
+    background: linear-gradient(to right, #0cdeeb , #02fe9b);
+    border-radius: 10px;
+}
+/*调整320像素条件下修改*/
+@media screen and (max-width: 320px){
+    .s2 .main p{
+        font-size: 10px;
+        margin: 0 20px;
+        line-height: 20px;
+        color: #00fbc3;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+    h1{
+        width: 80%;
+        height:25px;
+        font-size: 20px;
+        margin: 0 auto;
+        background: url("../img/images/s2_03.png") no-repeat;
+        background-size:100% 100%;
+        color: #09debe;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    }
+    .s1 .header img:nth-of-type(1){
+        width: 25px;
+        top:128px;
+        left: 50px;
+        animation-iteration-count:infinite;
+    }
+    .s1 .header img:nth-of-type(2){
+        width: 55px;
+        top:85px;
+        right: 37px;
+        animation-iteration-count:infinite;
+    }
+
+    .s1 .header img:nth-of-type(3) {
+        width: 45px;
+        left: 35px;
+        bottom: 185px;
+        animation-iteration-count:infinite;
+    }
+
+    .s1 .header img:nth-of-type(4) {
+        width: 36px;
+        right: 44px;
+        bottom: 210px;
+        animation-iteration-count:infinite;
+    }
+
+    .s1 .header img:nth-of-type(5) {
+        width: 58%;
+        left: 50%;
+        margin-left: -29%;
+        top: 27%;
+        animation-iteration-count:infinite;
+    }
+    .s1 .main .img9{
+        width: 45%;
+        font-size: 15px;
+        margin: 0 auto;
+        background: url("../img/9.png");
+        background-size:100% 100%;
+    }
+    .s1 .main{
+        position: absolute;
+        top:35%;
+    }
+}
+
+
+/*s3自定义样式*/
+.s3dashed{
+    text-align: center;
+    color: #0bffba;
+    position: absolute;
+    top: 30%;
+    left: 18%;
+
+}
+.s3dashed div:nth-of-type(1){
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    border:  dashed 1px #00fbc3;
+    animation: dashedshun 8s infinite linear;
+}
+.s3dashed div:nth-of-type(2){
+    width:230px;
+    height: 230px;
+    border-radius: 50%;
+    border:  dashed 1px #00fbc3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -115px;
+    margin-left: -115px;
+    animation: dashedni 8s infinite linear;
+}
+.s3dashed div:nth-of-type(3){
+    width:260px;
+    height: 260px;
+    border-radius: 50%;
+    border:  dashed 1px #00fbc3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -130px;
+    animation: dashedshun 8s infinite linear;
+}
+.s3dashed div:nth-of-type(4){
+    width:290px;
+    height: 290px;
+    border-radius: 50%;
+    border:  dashed 1px #00fbc3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -145px;
+    margin-left: -145px;
+    animation: dashedni 8s infinite linear;
+}
+.s3font{
+    width:80px;
+    height: 100px;
+    color: #26faae;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -65px;
+}
+.s3font div:nth-of-type(1) span:nth-of-type(1){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("../img/s3.png");
+    background-size: cover;
+    left: -90%;
+    top: -50%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(1) span:nth-of-type(2){
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url("../img/s3.png");
+    background-size: cover;
+    left: 106%;
+    top: -50%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(2) span:nth-of-type(1) {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../img/s3.png);
+    background-size: cover;
+    left: -138%;
+    top: 35%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(2) span:nth-of-type(2) {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../img/s3.png);
+    background-size: cover;
+    left: 157%;
+    top: 35%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(3) span:nth-of-type(1) {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../img/s3.png);
+    background-size: cover;
+    left: -90%;
+    top: 146%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(3) span:nth-of-type(2) {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../img/s3.png);
+    background-size: cover;
+    left: 107%;
+    top: 147%;
+    line-height: 60px;
+}
+.s3font div:nth-of-type(4) span {
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    background: url(../img/s3bg.png);
+    background-size: cover;
+    left: -38%;
+    top: 9%;
+    line-height:134px;
+}
+
+.s3 .s3text{
+    color:#26faae;
+    font-size:13px;
+    text-align: left;
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    width: 80%;
+    border-left:2px solid #26faae;
+    line-height: 20px;
+    padding-left: 10px;
+}
+@media screen and (max-width: 414px) {
+    .s3dashed{
+        position: absolute;
+        top: 28%;
+        left: 16%;
+
+    }
+    .s3dashed div:nth-of-type(1){
+        width:280px;
+        height: 280px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(2){
+        width:330px;
+        height: 330px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -165px;
+        margin-left: -165px;
+        animation: dashedni 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(3){
+        width:380px;
+        height: 380px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -190px;
+        margin-left: -190px;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(4){
+        width:430px;
+        height: 430px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -215px;
+        margin-left: -215px;
+        animation: dashedni 8s infinite linear;
+    }
+    @-webkit-keyframes dashedshun {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes dashedni {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .s3dashed{
+        position: absolute;
+        top: 27%;
+        left: 12%;
+
+    }
+    .s3dashed div:nth-of-type(1){
+        width:280px;
+        height: 280px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(2){
+        width:320px;
+        height: 320px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -160px;
+        margin-left: -160px;
+        animation: dashedni 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(3){
+        width:360px;
+        height: 360px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -180px;
+        margin-left: -180px;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(4){
+        width:400px;
+        height: 400px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -200px;
+        animation: dashedni 8s infinite linear;
+    }
+}
+@media screen and (max-width: 320px) {
+    .s3dashed{
+        text-align: center;
+        color: #0bffba;
+        position: absolute;
+        top: 30%;
+        left: 18%;
+
+    }
+    .s3dashed div:nth-of-type(1){
+        width:200px;
+        height: 200px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(2){
+        width:230px;
+        height: 230px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -115px;
+        margin-left: -115px;
+        animation: dashedni 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(3){
+        width:260px;
+        height: 260px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -130px;
+        margin-left: -130px;
+        animation: dashedshun 8s infinite linear;
+    }
+    .s3dashed div:nth-of-type(4){
+        width:290px;
+        height: 290px;
+        border-radius: 50%;
+        border:  dashed 1px #00fbc3;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -145px;
+        margin-left: -145px;
+        animation: dashedni 8s infinite linear;
+    }
+    .s3font{
+        width:80px;
+        height: 100px;
+        color: #26faae;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: -65px;
+    }
+    .s3font div:nth-of-type(1) span:nth-of-type(1){
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url("../img/s3.png");
+        background-size: cover;
+        left: -90%;
+        top: -50%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(1) span:nth-of-type(2){
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url("../img/s3.png");
+        background-size: cover;
+        left: 106%;
+        top: -50%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(2) span:nth-of-type(1) {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url(../img/s3.png);
+        background-size: cover;
+        left: -138%;
+        top: 35%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(2) span:nth-of-type(2) {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url(../img/s3.png);
+        background-size: cover;
+        left: 157%;
+        top: 35%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(3) span:nth-of-type(1) {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url(../img/s3.png);
+        background-size: cover;
+        left: -90%;
+        top: 146%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(3) span:nth-of-type(2) {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: url(../img/s3.png);
+        background-size: cover;
+        left: 107%;
+        top: 147%;
+        line-height: 60px;
+    }
+    .s3font div:nth-of-type(4) span {
+        position: absolute;
+        width: 134px;
+        height: 134px;
+        background: url(../img/s3bg.png);
+        background-size: cover;
+        left: -38%;
+        top: 9%;
+        line-height:134px;
+    }
+
+    .s3 .s3text{
+        color:#26faae;
+        font-size:13px;
+        text-align: left;
+        position: absolute;
+        top: 80%;
+        left: 15%;
+        width: 80%;
+        border-left:2px solid #26faae;
+        line-height: 20px;
+        padding-left: 10px;
+    }
+
+}
+
+
+
+
+/*s4自定义样式*/
+.s4 .main{
+    background: url("../img/s4bg.png");
+    background-size:100% 100%;
+    color: #26faae;
+    margin:20px;
+}
+.s4 .main div{
+    text-align: left;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.s4 .main div:nth-of-type(1){
+    padding-top: 30px;
+    height: 20px;
+    width: 180px;
+    margin: 0 auto;
+    padding-bottom:20px;
+}
+.s4 .main div:nth-of-type(1) img{
+     width: 20px;
+}
+.s4 .main div:nth-of-type(2){
+    margin-top: 20px;
+}
+.s4 .main .s4first .s4firstimg1{
+    width: 20px;
+}
+.s4 .main .s4first .s4firstimg2{
+    height: 18px;
+    margin-left: 20px;
+    width: 80%;
+}
+.s4 .main .s4first .s4firstimg3{
+    height: 18px;
+    width: 40%;
+    margin-left: 20px;
+}
+
+.s4 .main .s4second .s4firstimg1{
+    width: 20px;
+}
+.s4 .main .s4second .s4firstimg2{
+    height: 18px;
+    margin-left: 20px;
+    width: 70%;
+}
+.s4 .main .s4second .s4firstimg3{
+    height: 18px;
+    width: 35%;
+    margin-left: 20px;
+}
+
+.s4 .main .s4third .s4firstimg1{
+    width: 20px;
+}
+.s4 .main .s4third .s4firstimg2{
+    height: 18px;
+    margin-left: 20px;
+    width: 70%;
+}
+.s4 .main .s4third .s4firstimg3{
+    height: 18px;
+    width: 35%;
+    margin-left: 20px;
+}
+.s4 .main .s4fourth{
+    color: #00e1b4;
+    text-align: center;
+    width:85%;
+    font-size: 14px;
+    margin: 30px auto;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 320px){
+    .s4 .main{
+        background: url("../img/s4bg.png");
+        background-size:100% 100%;
+        color: #26faae;
+        margin:10px;
+    }
+    .s4 .main div{
+        text-align: left;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .s4 .main div:nth-of-type(1){
+        padding-top: 30px;
+        /*height: 15px;*/
+        width: 180px;
+        margin: 0 auto;
+        padding-bottom:15px;
+    }
+    .s4 .main div:nth-of-type(1) img{
+        width: 20px;
+    }
+    .s4 .main div:nth-of-type(2){
+        margin-top: 20px;
+    }
+    .s4 .main .s4first .s4firstimg1{
+        width: 12px;
+    }
+    .s4 .main .s4first .s4firstimg2{
+        height: 12px;
+        margin-left: 20px;
+        width: 70%;
+    }
+    .s4 .main .s4first .s4firstimg3{
+        height: 12px;
+        width: 40%;
+        margin-left: 20px;
+    }
+
+    .s4 .main .s4second .s4firstimg1{
+        width: 12px;
+    }
+    .s4 .main .s4second .s4firstimg2{
+        height: 12px;
+        margin-left: 20px;
+        width: 60%;
+    }
+    .s4 .main .s4second .s4firstimg3{
+        height: 12px;
+        width: 30%;
+        margin-left: 20px;
+    }
+
+    .s4 .main .s4third .s4firstimg1{
+        width: 12px;
+    }
+    .s4 .main .s4third .s4firstimg2{
+        height: 12px;
+        margin-left: 20px;
+        width: 40%;
+    }
+    .s4 .main .s4third .s4firstimg3{
+        height: 12px;
+        width: 20%;
+        margin-left: 20px;
+    }
+    .s4 .main .s4fourth{
+        color: #00e1b4;
+        text-align: center;
+        width:85%;
+        font-size: 12px;
+        margin: 30px auto;
+        padding-bottom: 20px;
+    }
 }
