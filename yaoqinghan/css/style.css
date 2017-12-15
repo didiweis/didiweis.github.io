@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+
+/*下一页按钮样式*/
+.swiper-button-next {
+    position: absolute;
+    boottom: 0;
+    bottom: 5%;
+    top: 95%;
+    transform: rotateZ(-90deg);
+    left: 48%;
+    width: 28%;
+    width: 17px;
+    height: 34px;
+    background-size: 17px 34px;
+}
+
+/*s1样式*/
+.s1{
+    background: url("../img/s11.png");
+    background-size:100% 100%;
+    height: 100%;
+}
+.s1 .header img{
+    width: 70%;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.s1 .header p:nth-of-type(1){
+    color: aqua;
+    padding-top: 28%;
+    font-size: 47px;
+}
+.s1 .header p:nth-of-type(2){
+    color: aqua;
+    padding-top: 5%;
+    font-size: 65px;
+}
